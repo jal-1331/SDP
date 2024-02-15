@@ -19,6 +19,7 @@ body {
   
   .first{
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
   }
   .second{
@@ -46,5 +47,6 @@ body {
     box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.847);
     border-radius: 5px;
     margin: 10px;
-    
   }
+
+  

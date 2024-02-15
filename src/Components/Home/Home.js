@@ -2,21 +2,23 @@ import React from 'react'
 import ImageUpload from './ImageUpload'
 import './Home.css'
 import Disease from './Disease'
-
+import Navbar from '../Navbar'
 
 const Home = () => {
   return (
-    
-    <div className='main'>
-        
-      <div className='Image'>
-      <ImageUpload />
-      </div>
-      <div className='disease'>
-        <Disease />
+    <>
+      <Navbar />
+      <div className="main">
+        <div className="Image">
+          <ImageUpload />
+          <button className="button">How It's Works?</button>
+        </div>
 
+        <div className="disease">
+          <Disease />
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
