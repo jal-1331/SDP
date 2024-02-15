@@ -1,13 +1,14 @@
 import React from 'react'
 import './Navbar.css'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   return (
     <div className="navbar navbar-expand-lg navbar-light bg-light shape">
       <nav className="container ">
-        <a className="navbar-brand" href="#">
-          DocPlant
-        </a>
+        <Link className="navbar-brand" to="/">
+          DrPlant
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -26,19 +27,19 @@ export default function Navbar() {
         >
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <a className="nav-link navbar-brand" href="#">
+              <Link className="nav-link navbar-brand" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link navbar-brand" href="#">
+              <Link className="nav-link navbar-brand" to="/Services">
                 services
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link navbar-brand" href="#">
+              <Link className="nav-link navbar-brand" to="/Contact_us">
                 contact us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

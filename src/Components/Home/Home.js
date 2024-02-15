@@ -3,15 +3,23 @@ import ImageUpload from './ImageUpload'
 import './Home.css'
 import Disease from './Disease'
 import Navbar from '../Navbar'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  const navigate = useNavigate()
+
+  const handleonclick = () => {
+    navigate('/Info')
+  }
   return (
     <>
       <Navbar />
       <div className="main">
         <div className="Image">
           <ImageUpload />
-          <button className="button">How It's Works?</button>
+          <button className="button" onClick={handleonclick}>
+            How It's Works?
+          </button>
         </div>
 
         <div className="disease">
