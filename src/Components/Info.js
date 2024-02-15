@@ -35,19 +35,19 @@ const Info = () => {
         <h1>How It Works?</h1>
       </div>
       <div className="detail">
-        <div className="first">
+        <div className="f">
           <img src="Phoneicon.png" height={"80px"} width={"60px"}></img>
 
           <h3>Click a pic</h3>
           <h5>Take a picture of your plant leaf</h5>
         </div>
-        <div className="second">
+        <div className="s">
           <img src="upload.png" height={"80px"} width={"80px"}></img>
 
           <h3>Upload on web</h3>
           <h5>visit DrPlant site and upload your image</h5>
         </div>
-        <div className="second">
+        <div className="t">
           <img src="more.png" height={"80px"} width={"70px"}></img>
 
           <h3>Get Final Report</h3>
