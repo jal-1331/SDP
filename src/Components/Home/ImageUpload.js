@@ -43,7 +43,7 @@ const ImageUpload = () => {
 
       {!selectedImage && (
         <div className="default-image" onClick={handleImageClick}>
-         
+          
           <img
             alt="default"
             width={"250px"}

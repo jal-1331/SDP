@@ -12,13 +12,13 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <>
-      <div className="App">
-        <Home />
-        {/* <Info /> */}
-      </div>
-    </>
-  )
+    <div className="App">
+      <Home />
+      {/* <Info /> */}
+     
+      
+    </div>
+  );
 }
 
 export default App

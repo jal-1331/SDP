@@ -2,7 +2,7 @@
   height: 300px;
   width: 100%;
   background: rgb(18,196,18);
-  background: radial-gradient(circle, rgba(18,196,18,1) 0%, rgba(158,233,148,1) 100%);
+  background: radial-gradient(circle, #12c412 0%, rgba(158,233,148,1) 100%);
   display: flex;
   flex-direction: column;
   
@@ -21,19 +21,20 @@
   width: 100%;
 }
 
-.first {
+.f {
+  flex: 1;
+  text-align: center;
+ 
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.s {
   flex: 1;
   text-align: center;
   margin-right: 30px;
   margin-left: 30px;
 }
-.second {
-  flex: 1;
-  text-align: center;
-  margin-right: 30px;
-  margin-left: 30px;
-}
-.third {
+.t {
   flex: 1;
   text-align: center;
   margin-right: 30px;
