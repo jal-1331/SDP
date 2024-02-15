@@ -15,8 +15,8 @@ import React,{useState} from 'react';
 function App() {
   return (
     <div className="App">
-      <Home />
-      {/* <Info /> */}
+      {/* <Home /> */}
+      <Info />
      
       
     </div>
