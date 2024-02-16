@@ -1,5 +1,5 @@
-import React from "react";
-import "./Disease.css";
+import React from 'react'
+import './Disease.css'
 
 export default function Disease() {
   return (
@@ -7,8 +7,8 @@ export default function Disease() {
       <div className="first">
         <div className="one">
           <img
-            width={"150px"}
-            height={"150px"}
+            width={'150px'}
+            height={'150px'}
             src="https://extension.umn.edu/sites/extension.umn.edu/files/bacterial-symptoms-pepper.jpg"
             alt="image"
           />
@@ -17,8 +17,8 @@ export default function Disease() {
 
         <div className="two">
           <img
-            width={"150px"}
-            height={"150px"}
+            width={'150px'}
+            height={'150px'}
             src="https://apps.lucidcentral.org/pppw_v11/images/entities/tomato_early_blight_211/alternariasol1.jpg"
             alt="image"
           />
@@ -27,8 +27,8 @@ export default function Disease() {
 
         <div className="three">
           <img
-            width={"150px"}
-            height={"150px"}
+            width={'150px'}
+            height={'150px'}
             src="https://content.peat-cloud.com/thumbnails/leaf-mold-of-tomato-1.jpg"
             alt="image"
           />
@@ -39,8 +39,8 @@ export default function Disease() {
       <div className="second">
         <div className="four">
           <img
-            width={"150px"}
-            height={"150px"}
+            width={'150px'}
+            height={'150px'}
             src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Late_blight_on_tomato_leaf_%287871756748%29.jpg"
             alt="image"
           />
@@ -49,8 +49,8 @@ export default function Disease() {
 
         <div className="five">
           <img
-            width={"150px"}
-            height={"150px"}
+            width={'150px'}
+            height={'150px'}
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrg2LUWNKiJudQmLDMQyHvbgbQmGkE0LVlYRQqCE3YMw&s"
             alt="image"
           />
@@ -59,8 +59,8 @@ export default function Disease() {
 
         <div className="six">
           <img
-            width={"150px"}
-            height={"150px"}
+            width={'150px'}
+            height={'150px'}
             src="https://kentuckypestnews.files.wordpress.com/2016/07/spider-mites-fig-11.jpg"
             alt="image"
           />
@@ -71,8 +71,8 @@ export default function Disease() {
       <div className="third">
         <div className="seven">
           <img
-            width={"150px"}
-            height={"150px"}
+            width={'150px'}
+            height={'150px'}
             src="https://apps.lucidcentral.org/pppw_v10/images/entities/tomato_target_spot_163/img_4795.jpg"
             alt="image"
           />
@@ -81,8 +81,8 @@ export default function Disease() {
 
         <div className="eight">
           <img
-            width={"150px"}
-            height={"150px"}
+            width={'150px'}
+            height={'150px'}
             src="https://www.greenlife.co.ke/wp-content/uploads/2022/04/Tomato-Leaf-Curl.jpg"
             alt="image"
           />
@@ -91,8 +91,8 @@ export default function Disease() {
 
         <div className="nine">
           <img
-            width={"150px"}
-            height={"150px"}
+            width={'150px'}
+            height={'150px'}
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPuzcZTh5FftUfWZWjjrRTFdYKQb8rex9jesxvh7i6Fu44gI9h8nc30VjPjj3gcJkAnro&usqp=CAU"
             alt="image"
           />
@@ -100,5 +100,5 @@ export default function Disease() {
         </div>
       </div>
     </div>
-  );
+  )
 }
