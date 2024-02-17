@@ -18,6 +18,7 @@ const Home = () => {
         <div className="Image">
           <h2>Insert Leaf Image Here..</h2>
           <ImageUpload />
+
           <button className="button" onClick={handleonclick}>
             How It's Works?
           </button>
