@@ -4,3 +4,22 @@
 .shape{
     height: 76px;
 }
+.container{
+    border: 2px solid black;
+    background: rgb(235,238,235);
+background: linear-gradient(90deg, rgba(235,238,235,1) 0%, rgba(37,231,223,1) 40%, rgba(134,255,107,1) 100%);
+}
+li{
+    font-style: italic;
+    font-weight: bold;
+
+}
+li:hover{
+    
+    /* font-weight: 100; */
+    background-color: rgba(18, 229, 233, 0.50);
+}
+.navbar-brand{
+    font-weight: bolder;
+    
+}

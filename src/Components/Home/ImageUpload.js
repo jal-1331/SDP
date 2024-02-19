@@ -56,8 +56,8 @@ const ImageUpload = () => {
         <div className="selected-image">
           <img
             alt="not found"
-            width={'250px'}
-            height={'250px'}
+            width={'400px'}
+            height={'400px'}
             src={URL.createObjectURL(selectedImage)}
           />
           <br />
@@ -69,8 +69,8 @@ const ImageUpload = () => {
         <div className="default-image" onClick={handleImageClick}>
           <img
             alt="default"
-            width={'250px'}
-            height={'250px'}
+            width={'400px'}
+            height={'400px'}
             src={defaultImageURL}
           />
         </div>

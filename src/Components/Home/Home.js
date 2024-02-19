@@ -4,6 +4,8 @@ import './Home.css'
 import Disease from './Disease'
 import Navbar from '../Navbar'
 import { useNavigate } from 'react-router-dom'
+import Info from '../Info'
+import Alldetail from '../Detail/Alldetail'
 
 const Home = () => {
   const navigate = useNavigate()
@@ -16,17 +18,20 @@ const Home = () => {
       <Navbar />
       <div className="main">
         <div className="Image">
-          <h2>Insert Leaf Image Here..</h2>
+          <h2>Insert Your Leaf Image Here..</h2>
           <ImageUpload />
 
-          <button className="button" onClick={handleonclick}>
+          {/* <button className="button" onClick={handleonclick}>
             How It's Works?
-          </button>
+          </button> */}
         </div>
 
-        <div className="disease">
+        {/* <div className="disease">
           <Disease />
-        </div>
+        </div> */}
+        <div className='HIW'></div>
+        <Info />
+        <Alldetail/>
       </div>
     </>
   )

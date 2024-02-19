@@ -37,7 +37,7 @@ const cardsData = [
 const Info = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div>
         <div className="info">
           <div className="heading">

@@ -20,13 +20,13 @@
   }
   
   .selected-image img {
-    max-width: 250px;
-    max-height: 250px;
+    width: 300px;
+    height: 300px;
   }
   
   .default-image img {
-    max-width: 250px;
-    max-height: 250px;
+    width: 400px;
+    height: 400px;
   }
   
   .selected-image button,
