@@ -1,7 +1,6 @@
 import React from 'react'
 import './info.css'
 import Block from './Block'
-import Navbar from './Navbar'
 const cardsData = [
   {
     title: 'Image Acquisition',
@@ -45,29 +44,28 @@ const Info = () => {
           </div>
           <div className="detail">
             <div className="f">
-              <img src="Phoneicon.png" height={'80px'} width={'60px'}></img>
-
+              <img src="Phoneicon.png" height={'80px'} width={'60px'} />
               <h3>Click a pic</h3>
               <h5>Take a picture of your plant leaf</h5>
             </div>
             <div className="s">
-              <img src="upload.png" height={'80px'} width={'80px'}></img>
-
+              <img src="upload.png" height={'80px'} width={'80px'} />
               <h3>Upload on web</h3>
-              <h5>visit DrPlant site and upload your image</h5>
+              <h5>Visit DrPlant site and upload your image</h5>
             </div>
             <div className="t">
-              <img src="more.png" height={'80px'} width={'70px'}></img>
-
+              <img src="more.png" height={'80px'} width={'70px'} />
               <h3>Get Final Report</h3>
               <h5>
-                DrPlant analyze your Leaf image and display reports for you
+                DrPlant analyzes your Leaf image and displays reports for you
               </h5>
             </div>
           </div>
         </div>
+        <div className="HIW"></div>
         <div className="Content">
-          <h2>Understanding the Background of DrPlant</h2>
+          <h1>Understanding the Background of DrPlant</h1>
+          <div className="HIW"></div>
           <div className="card-container">
             {cardsData.map((card, index) => (
               <Block key={index} title={card.title} content={card.content} />

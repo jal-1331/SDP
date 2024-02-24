@@ -5,6 +5,8 @@ const ImageUpload = () => {
   const defaultImageURL = process.env.PUBLIC_URL + '/insert.jpg' // Replace with the actual path
   const [selectedImage, setSelectedImage] = useState(null)
   const [predictions, setPredictions] = useState(null)
+  const [index, setIndex] = useState()
+  const [lable, setlable] = useState()
 
   const handleImageClick = () => {
     const input = document.createElement('input')
@@ -38,14 +40,45 @@ const ImageUpload = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.predictions)
-        const arr = data.predictions.map((prediction, index) => {
-          return prediction
-        })
-        console.log(arr)
-        const maxValue = Math.max(...arr)
-        console.log(maxValue)
-        setPredictions(data.predictions)
+        if (data.predictions && data.predictions.length > 0) {
+          let maxIndex = 0
+          let maxValue = data.predictions[0][0]
+          for (let i = 1; i < data.predictions[0].length; i++) {
+            if (data.predictions[0][i] > maxValue) {
+              maxValue = data.predictions[0][i]
+              maxIndex = i
+            }
+          }
+          let lable = ''
+          if (maxIndex == 0) {
+            lable = 'Bacterial_spot'
+          } else if (maxIndex == 1) {
+            lable = 'Early_blight'
+          } else if (maxIndex == 2) {
+            lable = 'Late_blight'
+          } else if (maxIndex == 3) {
+            lable = 'Leaf_Mold'
+          } else if (maxIndex == 4) {
+            lable = 'Septoria_leaf_spot'
+          } else if (maxIndex == 5) {
+            lable = 'Spider_mites Two-spotted_spider_mite'
+          } else if (maxIndex == 6) {
+            lable = 'Target_Spot'
+          } else if (maxIndex == 7) {
+            lable = 'Tomato_Yellow_Leaf_Curl_Virus'
+          } else if (maxIndex == 8) {
+            lable = 'Tomato_mosaic_virus'
+          } else if (maxIndex == 9) {
+            lable = 'Healthy'
+          }
+          console.log('Lable of the predection is ', lable)
+          console.log('Index of the maximum value:', maxIndex)
+          setPredictions(data.predictions[0])
+          setIndex(maxIndex)
+          setlable(lable)
+        } else {
+          console.log('No predictions found in the response')
+        }
       })
       .catch((error) => console.error('Error:', error))
   }
@@ -93,9 +126,10 @@ const ImageUpload = () => {
             <div className="predictions">
               <h3>Predictions:</h3>
               <ul>
-                {predictions.map((prediction, index) => (
+                {/* {predictions.map((prediction, index) => (
                   <li key={index}>{prediction}</li>
-                ))}
+                ))} */}
+                {lable}
               </ul>
             </div>
           )}

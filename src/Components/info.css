@@ -1,16 +1,14 @@
 .info {
-  height: 300px;
+  height: auto; /* Allow content to expand vertically */
   width: 100%;
-  background: rgb(235,238,235);
-  background: linear-gradient(90deg, rgba(235, 238, 235, 0.429) 0%, rgba(37, 231, 225, 0.283) 40%, rgba(134, 255, 107, 0.329) 100%);
+  background: rgb(235, 238, 235);
+  background-color:  #50c878d0; 
   display: flex;
+  border-radius: 10px ;
   flex-direction: column;
-  border: 2px solid black;
-  
-  align-items: center;
-  text-align: center;
-  }
-  
+  /* Other styles as needed */
+}
+
 .heading {
   margin-bottom: 20px;
 }
@@ -20,25 +18,58 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  
+  overflow: hidden;
 }
 
-.f {
-  flex: 1;
-  text-align: center;
- 
-  margin-right: 30px;
-  margin-left: 30px;
-}
-.s {
-  flex: 1;
-  text-align: center;
-  margin-right: 30px;
-  margin-left: 30px;
-}
+.f,
+.s,
 .t {
-  flex: 1;
   text-align: center;
-  margin-right: 30px;
-  margin-left: 30px;
+  flex: 1; /* Initial flex value for larger screens */
+  margin: 10px; /* Adjust margin as needed */
+}
+
+.f:hover,
+.s:hover,
+.t:hover{
+  border-radius: 5px ;
+  /* font-weight: 100; */
+  background-color: #fcffe3;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 8px 8px 12px #015f06;
+}
+
+/* Media queries for responsive behavior */
+@media only screen and (max-width: 768px) {
+  /* For smaller screens (up to 768px) */
+  .detail {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .f,
+  .s,
+  .t {
+    flex: 0 0 100%; /* Set flex-basis to 100% for equal width */
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* For medium screens (768px to 1024px) */
+  .detail {
+    flex-direction: row; /* Revert to row layout */
+  }
+
+  .f,
+  .s,
+  .t {
+    flex: 1; /* Restore initial flex value */
+  }
+}
+.HIW{
+  margin: 20px;
+}
+
+.Content{
+  border-radius: 10px ;
+  background-color:  #50c878d0; 
 }

@@ -16,8 +16,9 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="main">
+      <div className="main container">
         <div className="Image">
+          <h1 className="font-style">Welcome To DrPlant</h1>
           <h2>Insert Your Leaf Image Here..</h2>
           <ImageUpload />
 
@@ -25,13 +26,14 @@ const Home = () => {
             How It's Works?
           </button> */}
         </div>
-
         {/* <div className="disease">
           <Disease />
         </div> */}
-        <div className='HIW'></div>
+        <div className="HIW"></div>
         <Info />
-        <Alldetail/>
+        <Alldetail />
+
+        <div className="HIW"></div>
       </div>
     </>
   )
