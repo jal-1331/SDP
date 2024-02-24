@@ -9,6 +9,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import About from './Components/About/About'
 import Contact_us from './Components/Contact_us/Contact_us'
 import Services from './Components/Services/Services'
+import Login from './Components/Login/Login'
+import Verifyotp from './Components/Login/Verifyotp'
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/About" element={<About />}></Route>
           <Route path="/Contact_us" element={<Contact_us />}></Route>
           <Route path="/Services" element={<Services />}></Route>
+          <Route path="/Login" element={<Login />}></Route>
+          <Route path="/Verifyotp" element={<Verifyotp />} />
         </Routes>
       </BrowserRouter>
     </div>

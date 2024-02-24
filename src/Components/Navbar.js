@@ -56,10 +56,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item blockl">
-              <Link
-                className="nav-link navbar-brand centered-link"
-                to="/Contact_us"
-              >
+              <Link className="nav-link navbar-brand centered-link" to="/Login">
                 Login
               </Link>
             </li>
