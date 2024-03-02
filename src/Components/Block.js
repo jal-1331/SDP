@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import './Block.css'
+import './blockcss.css'
 
 const Block = ({ title, content }) => {
   return (
-    <div className="card">
+    <div className="card2">
       <h3>{title}</h3>
       <p>{content}</p>
     </div>

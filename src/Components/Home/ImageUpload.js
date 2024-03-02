@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Image.css' // Import the CSS
+import { Link } from 'react-router-dom'
 
 const ImageUpload = () => {
   const defaultImageURL = process.env.PUBLIC_URL + '/insert.jpg' // Replace with the actual path
@@ -126,10 +127,12 @@ const ImageUpload = () => {
             <div className="predictions">
               <h3>Predictions:</h3>
               <ul>
-                {/* {predictions.map((prediction, index) => (
+                <Link to="/Diseaseinfo">
+                  {/* {predictions.map((prediction, index) => (
                   <li key={index}>{prediction}</li>
                 ))} */}
-                {lable}
+                  {lable}
+                </Link>
               </ul>
             </div>
           )}

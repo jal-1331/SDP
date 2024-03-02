@@ -11,6 +11,7 @@ import Contact_us from './Components/Contact_us/Contact_us'
 import Services from './Components/Services/Services'
 import Login from './Components/Login/Login'
 import Verifyotp from './Components/Login/Verifyotp'
+import Diseaseinfo from './Components/DiseaseInfo/Diseaseinfo'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/Services" element={<Services />}></Route>
           <Route path="/Login" element={<Login />}></Route>
           <Route path="/Verifyotp" element={<Verifyotp />} />
+          <Route path="/Diseaseinfo" element={<Diseaseinfo />} />
         </Routes>
       </BrowserRouter>
     </div>

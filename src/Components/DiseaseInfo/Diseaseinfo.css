@@ -9,12 +9,13 @@ body {
   
   .component {
     display: grid;
+    margin-top: 10px;
     /* grid-template-columns: repeat(3, 1fr); */
     gap: 20px;
     /* max-width: 800px; */
     /* margin: 20px auto; */
     border-radius: 10px;
-    background-color:  #50C878; 
+    background-color:  #ffffff; 
     /* background: rgb(239,248,239); */
     /* background: linear-gradient(90deg, rgba(234, 247, 234, 0.748) 0%, rgba(166, 241, 239, 0.669) 40%, rgba(193, 253, 180, 0.558) 100%); */
   }
@@ -42,7 +43,7 @@ body {
     margin: 0;
     cursor: pointer;
     color: black;
-    font-size: 18px;
+    font-size: 28px;
   }
   
   .disease-details {
@@ -59,4 +60,13 @@ body {
     color: black;
     text-align: left; 
   }
-  
+  .disease-infotext{
+    font-size: 20px;
+  }
+  .disease-imagediv{
+    margin-right: 20px;
+  }
+  .box{
+    display: flex;
+    margin: 20px;
+  }
